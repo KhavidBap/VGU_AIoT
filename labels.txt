@@ -1,0 +1,3 @@
+0 WithGlasses
+1 WithoutGlasses
+2 NoObject
