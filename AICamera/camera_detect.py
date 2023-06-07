@@ -9,10 +9,10 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model("D:/MultiDisplicineProject/VGU_AIoT/keras_model.h5", compile=False)
+model = load_model("/VGU_AIoT/AICamera/keras_model.h5", compile=False)
 
 # Load the labels
-class_names = open("D:/MultiDisplicineProject/VGU_AIoT/labels.txt", "r", encoding="utf-8").readlines()
+class_names = open("/VGU_AIoT/AICamera/labels.txt", "r", encoding="utf-8").readlines()
 
 # CAMERA can be 0 or 1 based on default camera of your computer
 # camera = cv2.VideoCapture(0)
