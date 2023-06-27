@@ -5,7 +5,8 @@ from Adafruit_IO import MQTTClient
 
 AIO_FEED_ID = ""
 AIO_USERNAME = "KhavidNgo"
-AIO_KEY = "<api_key>"
+AIO_KEY = "aio_MwSU57uPmBTvlQodQaxYEBMhMWZa"
+
 
 def connected(client):
     print("Connecting to the server ...")
@@ -13,15 +14,19 @@ def connected(client):
     client.subscribe("button1")
     client.subscribe("button2")
 
-def subscribe(client , userdata , mid , granted_qos):
+
+def subscribe(client, userdata, mid, granted_qos):
     print("Subscribe successfully ...")
+
 
 def disconnected(client):
     print("Disconnecting ...")
     sys.exit (1)
 
-def message(client , feed_id , payload):
+
+def message(client, feed_id, payload):
     print("Input data: " + payload)
+
 
 client = MQTTClient(AIO_USERNAME , AIO_KEY)
 
